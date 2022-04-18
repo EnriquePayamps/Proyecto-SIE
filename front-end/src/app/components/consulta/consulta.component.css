@@ -1,0 +1,9 @@
+.container-sm{
+    max-width: 700px;
+   height: 400px;
+
+}
+.consulta{
+    padding-top: 180px;
+}
+label{font-size: 30px;}

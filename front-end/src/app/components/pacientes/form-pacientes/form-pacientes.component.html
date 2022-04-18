@@ -1,0 +1,63 @@
+<div class="container mt-5">
+    <h2>Agregar Paciente</h2>
+    <form [formGroup]="formPeciente" (ngSubmit)="enviarDatos()" class="mt-4">  
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" formControlName="NOMBRE" id="nombre" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+          <label for="apellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" formControlName="APELLIDO" id="apellido">
+        </div>
+
+        <div class="mb-3">
+            <label for="cedula" class="form-label">cedula</label>
+            <input type="number" class="form-control" formControlName="CEDULA" id="cedula">
+          </div>
+          
+          <div class="row">
+          <div class="col">
+            <label for="edad" class="form-label">Edad</label>
+            <input type="number" class="form-control" formControlName="EDAD" id="exampleInputPassword1">
+          </div>
+          
+          <div class="col">
+            <label for="sangre" class="form-label">Tipo de sangre</label>
+            <input type="text" class="form-control" formControlName="TIPO_SANGRE" id="sangre">
+          </div>
+        </div>
+          <label for="exampleInputPassword1" class="form-label mt-3">Sexo</label>
+          <div class="mb-3">
+            
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="SEXO" formControlName="SEXO" id="inlineRadio1" value="M">
+                <label class="form-check-label" for="maculino">Masculino</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="SEXO" formControlName="SEXO" id="inlineRadio2" value="F">
+                <label class="form-check-label" for="femenina">Femenina</label>
+              </div>  
+            </div>
+          
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono </label>
+            <input type="number" class="form-control" formControlName="TEL_EMERGENCIA" id="telefono">
+          </div>
+          
+          <div class="mb-3">
+            <label for="dispositivo" class="form-label">Dispositivo Medico</label>
+            <input type="text" class="form-control" formControlName="DISPOSITIVO_MEDICO" id="dispositivo">
+          </div>
+          <div class="mb-3">
+            <label for="enfermedades" class="form-label">Enfermedades frecuentes</label>
+            <input type="text" class="form-control" formControlName="ENFERMEDADES_FRECUENTES" id="enfermedades">
+          </div>
+          <div class="mb-3">
+            <label for="medicamentos" class="form-label">Medicamentos Recetados</label>
+            <input type="text" class="form-control" formControlName="MEDICAMENTOS_RECETADOS" id="medicamentos">
+          </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
